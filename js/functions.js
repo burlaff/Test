@@ -18,6 +18,6 @@ function generateTable() {
         newRow.append(column);
 
         // Add the row to the table
-        $("paceTable").append(newRow);
+        $("#paceTable").append(newRow);
     }
 }
