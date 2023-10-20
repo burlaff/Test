@@ -20,4 +20,5 @@ function generateTable() {
         // Add the row to the table
         $("#paceTable").append(newRow);
     }
+    alert("Javascript working");
 }
