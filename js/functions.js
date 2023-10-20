@@ -1,4 +1,5 @@
 function generateTable() {
+    alert("Javascript working");
 
     // Loop 30 times
     for (var i = 0; i < 30; i++) {
@@ -20,5 +21,5 @@ function generateTable() {
         // Add the row to the table
         $("#paceTable").append(newRow);
     }
-    alert("Javascript working");
+
 }
