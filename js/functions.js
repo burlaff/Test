@@ -1,5 +1,6 @@
 function generateTable() {
     let MPHValue = 6.0;
+    let MPHValueFormatted;
     let minsPerMileValue;
     let _5KTimeValue;
     let _10KTimeValue;
@@ -11,8 +12,8 @@ function generateTable() {
 
         // Round MPH to 2 decimal places
         MPHValue = Math.round(MPHValue * 100) / 100;
-        MPHValue = addDecimalPlace(MPHValue);
-        MPHValue = "" + MPHValue.toString();
+        MPHValueFormatted = addDecimalPlace(MPHValue);
+        MPHValueFormatted = "" + MPHValue.toString();
 
         // Empty table row and column
         let newRow = $("<tr>");
