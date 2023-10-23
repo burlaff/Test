@@ -45,6 +45,7 @@ function convertToMinutesPerMile(MPHValue) {
 
     minsPerMile = 60 / MPHValue;
     secondsOnly = minsPerMile % 1;
+    secondsOnly = secondsOnly * 60;
     minsOnly = Math.floor(minsPerMile);
 
     minsPerMile = minsOnly + ":" + secondsOnly;
