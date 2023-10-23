@@ -26,7 +26,7 @@ function generateTable() {
         // Mins per mile column
         column += '<td>' + convertToMinutesPerMile(MPHValue) + '</td>';
         // 5K Time Column
-        column += '<td>5K</td>';
+        column += '<td>' + calculateTime(3.1, MPHValue) + '</td>';
         // 10K Time Column
         column += '<td>10K</td>';
         // Half Marathon Time Column
@@ -81,11 +81,26 @@ function addLeadingZero(numberToCheck) {
     return numberToCheck;
 }
 
-function addDecimalPlace (numberToRound) {
+function addDecimalPlace(numberToRound) {
     if (numberToRound.toString().length === 1) {
         numberToRound = numberToRound.toString() + "." + "0";
     }
 
     return numberToRound;
+}
+
+function calculateTime(distance, speed) {
+    // Calculate time in hours, * 60 to convert to mins
+    let time = (distance / speed) * 60;
+    // Get minutes only by rounding down to zero decimals
+    let minsOnly = Math.floor(time);
+    // Get seconds only
+    let secondsOnly = (time % 1) * 60;
+
+    // Concat the results to get the formatted  time
+    let formattedTime = minsOnly + ":" + secondsOnly;
+
+    return formattedTime;
+
 }
 
