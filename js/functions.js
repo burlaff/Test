@@ -1,6 +1,13 @@
 function generateTable() {
     alert("Javascript working");
 
+    var MPHValue = 6;
+    var minsPerMileValue;
+    var 5KTimeValue;
+    var 10KTimeValue;
+    var HalfMarathonTimeValue;
+    var MarathonTimeValue;
+
     // Loop 30 times
     for (var i = 0; i < 30; i++) {
 
@@ -8,8 +15,9 @@ function generateTable() {
         var newRow = $("<tr>");
         var column = "";
 
-        column += '<td>Mins per mile</td>';
-        column += '<td>MPH</td>';
+        // Add the values to the columns
+        column += '<td>' + MPHValue + '</td>';
+        column += '<td>Mins per Mile</td>';
         column += '<td>5K</td>';
         column += '<td>10K</td>';
         column += '<td>Half Marathon</td>';
@@ -20,6 +28,10 @@ function generateTable() {
 
         // Add the row to the table
         $("#paceTable").append(newRow);
+
+        // Recalculate the variables
+        MPHValue += 0.10;
+
     }
 
 }
