@@ -14,12 +14,12 @@
     padding-left: 20px;
 }
 
-tr:nth-child(odd){
+#paceTable tr:nth-child(odd){
     background-color: #353535;
     color: whitesmoke;
 }
 
-tr:nth-child(even){
+#paceTable tr:nth-child(even){
     background-color: #f9f9f9;
     color: #353535;
 }
