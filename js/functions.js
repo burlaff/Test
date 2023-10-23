@@ -77,7 +77,7 @@ function addLeadingZero(numberToCheck) {
 
 function addDecimalPlace (numberToRound) {
     if (numberToRound.toString().length === 1) {
-        numberToRound = numberToRound + "." + "0";
+        numberToRound = numberToRound.toString() + "." + "0";
     }
 
     return numberToRound;
