@@ -31,6 +31,7 @@ function generateTable() {
 
         // Recalculate the variables
         MPHValue += 0.10;
+        MPHValue = Math.round(MPHValue * 100) / 100;
 
     }
 
