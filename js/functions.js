@@ -14,10 +14,6 @@ function generateTable() {
         MPHValue = addDecimalPlace(MPHValue);
         MPHValue = "" + MPHValue.toString();
 
-        if (i === 1) {
-            alert(MPHValue);
-        }
-
 
         // Empty table row and column
         let newRow = $("<tr>");
