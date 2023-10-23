@@ -13,7 +13,8 @@ function generateTable() {
         // Round MPH to 2 decimal places
         MPHValue = Math.round(MPHValue * 100) / 100;
         MPHValueFormatted = addDecimalPlace(MPHValue);
-        MPHValueFormatted = "" + MPHValue.toString();
+        console.log("Formatted: " + MPHValueFormatted);
+        // MPHValueFormatted = "" + MPHValue.toString();
 
         // Empty table row and column
         let newRow = $("<tr>");
@@ -84,8 +85,6 @@ function addDecimalPlace (numberToRound) {
     if (numberToRound.toString().length === 1) {
         numberToRound = numberToRound.toString() + "." + "0";
     }
-
-    console.log(numberToRound);
 
     return numberToRound;
 }
