@@ -99,9 +99,9 @@ function calculateTime(distance, speed) {
     let secondsOnly = (time % 1) * 60;
     // Round seconds to zero decimal places
     secondsOnly = Math.round(secondsOnly);
-    // Add extra zero to secondsOnly for formatting
-    if (secondsOnly === 0) {
-        secondsOnly = "00";
+    // Add extra zero before secondsOnly for formatting
+    if (secondsOnly.toString().length === 1) {
+        secondsOnly = "0" + secondsOnly;
     }
 
     // Concat the results to get the formatted  time
