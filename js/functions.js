@@ -14,18 +14,24 @@ function generateTable() {
         // Round MPH to 2 decimal places
         MPHValue = Math.round(MPHValue * 100) / 100;
 
-        addDecimalPlace(MPHValue);
+        MPHValue = addDecimalPlace(MPHValue);
 
         // Empty table row and column
         let newRow = $("<tr>");
         let column = "";
 
-        // Add the values to the columns
+        // ---- Add the values to the columns ---- ///
+        // MPH Column
         column += '<td>' + MPHValue + '</td>';
+        // Mins per mile column
         column += '<td>' + convertToMinutesPerMile(MPHValue) + '</td>';
+        // 5K Time Column
         column += '<td>5K</td>';
+        // 10K Time Column
         column += '<td>10K</td>';
+        // Half Marathon Time Column
         column += '<td>Half Marathon</td>';
+        // Marathon Time Column
         column += '<td>Marathon</td>';
 
         // Add the column to the row
