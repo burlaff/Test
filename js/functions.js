@@ -14,7 +14,7 @@ function generateTable() {
         // Round MPH to 2 decimal places
         MPHValue = Math.round(MPHValue * 100) / 100;
 
-        roundToDecimalPlace(MPHValue,1);
+        addDecimalPlace(MPHValue);
 
         // Empty table row and column
         let newRow = $("<tr>");
@@ -75,8 +75,9 @@ function addLeadingZero(numberToCheck) {
     return numberToCheck;
 }
 
-function roundToDecimalPlace(number, decimalPlaces) {
-    // Multiply the number by 10^decimalPlaces, round it, and then divide by 10^decimalPlaces
-    return (Math.round(number * Math.pow(10, decimalPlaces)) / Math.pow(10, decimalPlaces)).toFixed(decimalPlaces);
+function addDecimalPlace (numberToRound) {
+    if (numberToRound.toString().length === 1) {
+        numberToRound = numberToRound + "." + "0";
+    }
 }
 
