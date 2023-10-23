@@ -1,6 +1,4 @@
 function generateTable() {
-    alert("Javascript working");
-
     let MPHValue = 6.0;
     let minsPerMileValue;
     let _5KTimeValue;
@@ -15,6 +13,11 @@ function generateTable() {
         MPHValue = Math.round(MPHValue * 100) / 100;
         MPHValue = addDecimalPlace(MPHValue);
         MPHValue = "" + MPHValue.toString();
+
+        if (i === 1) {
+            alert(MPHValue);
+        }
+
 
         // Empty table row and column
         let newRow = $("<tr>");
