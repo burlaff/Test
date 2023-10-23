@@ -1,6 +1,8 @@
 function generateTable() {
     let MPHValue = 6.0;
     let MPHValueFormatted;
+    let KPHValue;
+    let KPHValueFormatted;
     let minsPerMileValue;
     let _5KTimeValue;
     let _10KTimeValue;
@@ -10,11 +12,16 @@ function generateTable() {
     // Loop 30 times
     for (let i = 0; i < 31; i++) {
 
+
+        // ---- Calculate and format MPH and KPH ---- //
         // Round MPH to 2 decimal places
         MPHValue = Math.round(MPHValue * 100) / 100;
         MPHValueFormatted = addDecimalPlace(MPHValue);
-        console.log("Formatted: " + MPHValueFormatted);
-        // MPHValueFormatted = "" + MPHValue.toString();
+
+        // Calculate KPH
+        KPHValue = MPHValue * 1.6;
+        KPHValueFormatted = addDecimalPlace(KPHValue);
+
 
         // Empty table row and column
         let newRow = $("<tr>");
@@ -28,11 +35,11 @@ function generateTable() {
         // 5K Time Column
         column += '<td>' + calculateTime(3.1, MPHValue) + '</td>';
         // 10K Time Column
-        column += '<td>10K</td>';
+        column += '<td>' + calculateTime(6.2, MPHValue) + '</td>';
         // Half Marathon Time Column
-        column += '<td>Half Marathon</td>';
+        column += '<td>' + calculateTime(13.1, MPHValue) + '</td>';
         // Marathon Time Column
-        column += '<td>Marathon</td>';
+        column += '<td>' + calculateTime(26.2, MPHValue) + '</td>';
 
         // Add the column to the row
         newRow.append(column);
