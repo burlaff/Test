@@ -9,7 +9,6 @@ function generateTable() {
     let MarathonTimeValue;
 
     MPHValue = Math.round(MPHValue * 100) / 100;
-    MPHValue = Number(MPHValue).toFixed(1);
 
     // Loop 30 times
     for (let i = 0; i < 31; i++) {
