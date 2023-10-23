@@ -90,17 +90,19 @@ function addDecimalPlace(numberToRound) {
 }
 
 function calculateTime(distance, speed) {
+
     // Calculate time in hours, * 60 to convert to mins
     let time = (distance / speed) * 60;
     // Get minutes only by rounding down to zero decimals
     let minsOnly = Math.floor(time);
     // Get seconds only
     let secondsOnly = (time % 1) * 60;
-
+    // Round seconds to zero decimal places
+    secondsOnly = Math.round(secondsOnly);
     // Concat the results to get the formatted  time
-    let formattedTime = minsOnly + ":" + secondsOnly;
 
-    return formattedTime;
+
+    return minsOnly + ":" + secondsOnly;
 
 }
 
