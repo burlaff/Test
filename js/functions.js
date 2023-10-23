@@ -44,15 +44,20 @@ function convertToMinutesPerMile(MPHValue) {
     let secondsOnly;
     let minsOnly;
 
+    // Calcaulte minutes per mile from MPH value
     minsPerMile = 60 / MPHValue;
     secondsOnly = minsPerMile % 1;
     secondsOnly = secondsOnly * 60;
     secondsOnly = Math.ceil(secondsOnly);
     minsOnly = Math.floor(minsPerMile);
 
+    // Add the leading zero to seconds and mins if required
+    secondsOnly = addLeadingZero(secondsOnly);
+    minsOnly = addLeadingZero(minsOnly);
+
+    // concatenate mins and seconds, i.e. 9:30 minutes / mile
     minsPerMile = minsOnly + ":" + secondsOnly;
 
-    minsPerMile = addLeadingZero(minsPerMile);
 
     return minsPerMile;
 
