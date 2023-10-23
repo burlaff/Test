@@ -1,6 +1,8 @@
 #navBar{
     background-color: #353535;
     color: whitesmoke;
+    margin-bottom: 2px;
+    border-radius: 0px;
 }
 
 #jumboTron{
@@ -10,4 +12,14 @@
 
 #indexHeader {
     padding-left: 20px;
+}
+
+tr:nth-child(odd){
+    background-color: #353535;
+    color: whitesmoke;
+}
+
+tr:nth-child(even){
+    background-color: #f9f9f9;
+    color: #353535;
 }
