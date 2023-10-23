@@ -21,7 +21,7 @@ function generateTable() {
 
         // ---- Add the values to the columns ---- ///
         // MPH Column
-        column += '<td>' + MPHValue + '</td>';
+        column += '<td>' + MPHValueFormatted + '</td>';
         // Mins per mile column
         column += '<td>' + convertToMinutesPerMile(MPHValue) + '</td>';
         // 5K Time Column
