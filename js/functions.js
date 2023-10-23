@@ -3,8 +3,8 @@ function generateTable() {
 
     var MPHValue = 6;
     var minsPerMileValue;
-    var 5KTimeValue;
-    var 10KTimeValue;
+    var _5KTimeValue;
+    var _10KTimeValue;
     var HalfMarathonTimeValue;
     var MarathonTimeValue;
 
