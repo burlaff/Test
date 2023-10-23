@@ -79,5 +79,7 @@ function addDecimalPlace (numberToRound) {
     if (numberToRound.toString().length === 1) {
         numberToRound = numberToRound + "." + "0";
     }
+
+    return numberToRound;
 }
 
