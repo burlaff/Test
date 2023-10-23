@@ -8,10 +8,11 @@ function generateTable() {
     let HalfMarathonTimeValue;
     let MarathonTimeValue;
 
-    MPHValue = Math.round(MPHValue * 100) / 100;
-
     // Loop 30 times
     for (let i = 0; i < 31; i++) {
+
+        // Round MPH to 2 decimal places
+        MPHValue = Math.round(MPHValue * 100) / 100;
 
         // Empty table row and column
         let newRow = $("<tr>");
@@ -71,3 +72,4 @@ function addLeadingZero(numberToCheck) {
 
     return numberToCheck;
 }
+
