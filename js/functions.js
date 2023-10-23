@@ -80,6 +80,8 @@ function addDecimalPlace (numberToRound) {
         numberToRound = numberToRound.toString() + "." + "0";
     }
 
+    console.log(numberToRound);
+
     return numberToRound;
 }
 
