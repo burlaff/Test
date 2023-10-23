@@ -1,19 +1,19 @@
 function generateTable() {
     alert("Javascript working");
 
-    var MPHValue = 6.0;
-    var minsPerMileValue;
-    var _5KTimeValue;
-    var _10KTimeValue;
-    var HalfMarathonTimeValue;
-    var MarathonTimeValue;
+    let MPHValue = 6.0;
+    let minsPerMileValue;
+    let _5KTimeValue;
+    let _10KTimeValue;
+    let HalfMarathonTimeValue;
+    let MarathonTimeValue;
 
     // Loop 30 times
-    for (var i = 0; i < 30; i++) {
+    for (let i = 0; i < 30; i++) {
 
         // Empty table row and column
-        var newRow = $("<tr>");
-        var column = "";
+        let newRow = $("<tr>");
+        let column = "";
 
         // Add the values to the columns
         column += '<td>' + MPHValue + '</td>';
@@ -39,9 +39,10 @@ function generateTable() {
 
 function convertToMinutesPerMile(MPHValue) {
 
-    var minsPerMile;
-    var secondsOnly;
-    var minsOnly;
+    // Variables
+    let minsPerMile;
+    let secondsOnly;
+    let minsOnly;
 
     minsPerMile = 60 / MPHValue;
     secondsOnly = minsPerMile % 1;
@@ -51,6 +52,16 @@ function convertToMinutesPerMile(MPHValue) {
 
     minsPerMile = minsOnly + ":" + secondsOnly;
 
+    minsPerMile = addLeadingZero(minsPerMile);
+
     return minsPerMile;
 
+}
+
+function addLeadingZero(numberToCheck) {
+    if (numberToCheck.toString().length === 1) {
+        numberToCheck = "0" + numberToCheck;
+    }
+
+    return numberToCheck;
 }
