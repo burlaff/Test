@@ -47,7 +47,7 @@ function convertToMinutesPerMile(MPHValue) {
     secondsOnly = minsPerMile % 1;
     minsOnly = Math.floor(minsPerMile);
 
-    minsPerMile = minsOnly + ":" & secondsOnly;
+    minsPerMile = minsOnly + ":" + secondsOnly;
 
     return minsPerMile;
 
