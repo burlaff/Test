@@ -8,8 +8,11 @@ function generateTable() {
     let HalfMarathonTimeValue;
     let MarathonTimeValue;
 
+    MPHValue = Math.round(MPHValue * 100) / 100;
+    MPHValue = Number(MPHValue).toFixed(1);
+
     // Loop 30 times
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 31; i++) {
 
         // Empty table row and column
         let newRow = $("<tr>");
@@ -31,7 +34,6 @@ function generateTable() {
 
         // Recalculate the variables
         MPHValue += 0.10;
-        MPHValue = Math.round(MPHValue * 100) / 100;
 
     }
 
