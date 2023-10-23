@@ -10,7 +10,7 @@ function generateTable() {
     let MarathonTimeValue;
 
     // Loop 30 times
-    for (let i = 0; i < 31; i++) {
+    for (let i = 0; i < 41; i++) {
 
 
         // ---- Calculate and format MPH and KPH ---- //
