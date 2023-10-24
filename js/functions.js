@@ -23,13 +23,13 @@ function generateTable() {
         // Mins per mile column
         column += '<td>' + convertToMinutesPerMile(MPHValue) + '</td>';
         // 5K Time Column
-        column += '<td">' + calculateTime(3.1, MPHValue) + '</td>';
+        column += '<td>' + calculateTime(3.1, MPHValue) + '</td>';
         // 10K Time Column
-        column += '<td">' + formatHours(calculateTime(6.2, MPHValue)) + '</td>';
+        column += '<td>' + formatHours(calculateTime(6.2, MPHValue)) + '</td>';
         // Half Marathon Time Column
-        column += '<td">' + formatHours(calculateTime(13.1, MPHValue)) + '</td>';
+        column += '<td>' + formatHours(calculateTime(13.1, MPHValue)) + '</td>';
         // Marathon Time Column
-        column += '<td">' + formatHours(calculateTime(26.2, MPHValue)) + '</td>';
+        column += '<td>' + formatHours(calculateTime(26.2, MPHValue)) + '</td>';
 
         // Add the column to the row
         newRow.append(column);
