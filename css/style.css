@@ -1,3 +1,7 @@
+#indexBody{
+    font-family: monospace;
+}
+
 #navBar{
     background-color: #353535;
     color: whitesmoke;
@@ -12,6 +16,18 @@
 
 #indexHeader {
     padding-left: 20px;
+}
+
+th {
+    font-size: 26px;
+}
+
+td {
+    font-size: 20px;
+}
+
+#paceTable{
+    text-align: center;
 }
 
 #paceTable tr:nth-child(odd){
