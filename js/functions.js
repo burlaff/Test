@@ -143,15 +143,20 @@ function formatHours(timeToFormat) {
         remainingMinutes = timeInHours % 1;
         remainingMinutes = remainingMinutes * 60;
 
+        // Get remaining seconds from minutes
         remainingSeconds = remainingMinutes % 1;
         remainingSeconds = remainingSeconds * 60;
 
+        // Remove decimal places from hours, minutes and seconds
         timeInHours = Math.floor(timeInHours);
         remainingMinutes = Math.floor(remainingMinutes);
         remainingSeconds = Math.floor(remainingSeconds);
 
-        console.log("Remaining minutes: " + remainingMinutes);
-        console.log("Remaining Seconds: " + remainingSeconds);
+        // Add leading zero if applicable
+        timeInHours = addLeadingZero(timeInHours);
+        remainingMinutes = addLeadingZero(remainingMinutes);
+        remainingSeconds = addLeadingZero(remainingSeconds);
+
 
         return timeInHours + ":" + remainingMinutes + ":" + remainingSeconds;
 
