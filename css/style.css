@@ -7,22 +7,19 @@
     color: whitesmoke;
     margin-bottom: 2px;
     border-radius: 0px;
+    box-shadow: 0 3px 6px 1px #ccc;
 }
 
 #jumboTron{
     background-color: #353535;
     color: whitesmoke;
+    box-shadow: 0 3px 6px 1px #ccc;
 }
 
 #indexHeader {
     padding-left: 20px;
 }
 
-#mainColumn {
-    box-shadow: 0 3px 6px 1px #ccc;
-    border-radius: 15px;
-    padding: 20px;
-}
 
 th {
     font-size: 26px;
@@ -35,6 +32,8 @@ td {
 
 #paceTable{
     text-align: center;
+    box-shadow: 0 3px 6px 1px #ccc;
+    border-radius: 15px;
 }
 
 #paceTable tr:nth-child(odd){
