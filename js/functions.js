@@ -126,6 +126,9 @@ function formatHours(timeToFormat) {
     // Replace the ":" in timeToFormat with a "." and convert to float
     timeToFormat = timeToFormat.replace(":",".");
     timeToFormat = parseFloat(timeToFormat);
+
+    console.log("Time to format after parse: " + timeToFormat);
+
     // Variables
     let timeInHours;
     let remainingMinutes;
