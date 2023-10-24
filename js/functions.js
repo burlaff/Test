@@ -147,6 +147,8 @@ function formatHours(timeToFormat) {
         remainingSeconds = remainingSeconds * 60;
 
         timeInHours = Math.floor(timeInHours);
+        remainingMinutes = Math.floor(remainingMinutes);
+        remainingSeconds = Math.floor(remainingSeconds);
 
         return timeInHours + ":" + remainingMinutes + ":" + remainingSeconds;
 
