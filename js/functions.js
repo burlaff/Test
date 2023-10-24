@@ -1,27 +1,17 @@
 function generateTable() {
+
+    // ---- Variables ---- //
     let MPHValue = 6.0;
     let MPHValueFormatted;
-    let KPHValue;
-    let KPHValueFormatted;
-    let minsPerMileValue;
-    let _5KTimeValue;
-    let _10KTimeValue;
-    let HalfMarathonTimeValue;
-    let MarathonTimeValue;
 
     // Loop 30 times
     for (let i = 0; i < 41; i++) {
 
 
-        // ---- Calculate and format MPH and KPH ---- //
+        // ---- Calculate and format MPH ---- //
         // Round MPH to 2 decimal places
         MPHValue = Math.round(MPHValue * 100) / 100;
         MPHValueFormatted = addDecimalPlace(MPHValue);
-
-        // Calculate KPH
-        KPHValue = MPHValue * 1.6;
-        KPHValueFormatted = addDecimalPlace(KPHValue);
-
 
         // Empty table row and column
         let newRow = $("<tr>");
@@ -39,7 +29,7 @@ function generateTable() {
         // Half Marathon Time Column
         column += '<td>' + formatHours(calculateTime(13.1, MPHValue)) + '</td>';
         // Marathon Time Column
-        column += '<td>' + calculateTime(26.2, MPHValue) + '</td>';
+        column += '<td>' + formatHours(calculateTime(26.2, MPHValue)) + '</td>';
 
         // Add the column to the row
         newRow.append(column);
@@ -124,7 +114,7 @@ function formatHours(timeToFormat) {
     let originalTime = timeToFormat;
 
     // Replace the ":" in timeToFormat with a "." and convert to float
-    timeToFormat = timeToFormat.replace(":",".");
+    timeToFormat = timeToFormat.replace(":", ".");
     timeToFormat = parseFloat(timeToFormat);
 
     console.log("Time to format after parse: " + timeToFormat);
