@@ -150,6 +150,9 @@ function formatHours(timeToFormat) {
         remainingMinutes = Math.floor(remainingMinutes);
         remainingSeconds = Math.floor(remainingSeconds);
 
+        console.log("Remaining minutes: " + remainingMinutes);
+        console.log("Remaining Seconds: " + remainingSeconds);
+
         return timeInHours + ":" + remainingMinutes + ":" + remainingSeconds;
 
     }
