@@ -3,9 +3,9 @@
 }
 
 #navBar{
-    background-color: #353535;
+    background-color: #2d2d2d;
     color: whitesmoke;
-    margin-bottom: 2px;
+    margin-bottom: 0px;
     border-radius: 0px;
     box-shadow: 0 3px 6px 1px #ccc;
 }
