@@ -37,7 +37,7 @@ function generateTable() {
         // 10K Time Column
         column += '<td>' + calculateTime(6.2, MPHValue) + '</td>';
         // Half Marathon Time Column
-        column += '<td>' + calculateTime(13.1, MPHValue) + '</td>';
+        column += '<td>' + formatHours(calculateTime(13.1, MPHValue)) + '</td>';
         // Marathon Time Column
         column += '<td>' + calculateTime(26.2, MPHValue) + '</td>';
 
@@ -121,7 +121,11 @@ function calculateTime(distance, speed) {
 }
 
 function formatHours(timeToFormat) {
+    let originalTime = timeToFormat;
 
+    // Replace the ":" in timeToFormat with a "." and convert to float
+    timeToFormat.replace(":",".");
+    timeToFormat = parseFloat(timeToFormat);
     // Variables
     let timeInHours;
     let remainingMinutes;
@@ -144,6 +148,8 @@ function formatHours(timeToFormat) {
         return timeInHours + ":" + remainingMinutes + ":" + remainingSeconds;
 
     }
+
+    return originalTime;
 
 
 }
