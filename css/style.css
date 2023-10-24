@@ -47,3 +47,7 @@ td {
     color: #353535;
     /* */
 }
+
+.tableRow{
+    padding: 20px;
+}
