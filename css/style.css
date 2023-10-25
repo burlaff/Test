@@ -25,14 +25,14 @@
 }
 
 #navBar{
-    background-color: #2d2d2d;
+    background-color: #020306;
     color: whitesmoke;
     margin-bottom: 0px;
     border-radius: 0px;
 }
 
 #jumboTron{
-    background-color: #353535;
+    background-color: #090d19;
     color: whitesmoke;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -66,12 +66,12 @@ td {
 }
 
 #paceTable tr:nth-child(odd){
-    background-color: #353535;
+    background-color: #182243;
     color: whitesmoke;
 }
 
 #paceTable tr:nth-child(even){
-    background-color: #4f4f4f;
+    background-color: #090d19;
     color: whitesmoke;
     /* */
 }
