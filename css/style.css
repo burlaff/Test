@@ -8,7 +8,7 @@
 
 #bg-image{
     /* The image used */
-    background-image: url("./../images/background.jpg");
+    background-image: url("https://images.pexels.com/photos/1054218/pexels-photo-1054218.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
 
     /* Add the blur effect */
     filter: blur(8px);
