@@ -6,6 +6,13 @@
 
 }
 
+#indexContainer {
+    background-image: url('../images/background.jpg');
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+}
+
 #navBar{
     background-color: #2d2d2d;
     color: whitesmoke;
