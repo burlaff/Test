@@ -70,8 +70,8 @@ td {
 }
 
 #paceTable tr:nth-child(even){
-    background-color: #f9f9f9;
-    color: #353535;
+    background-color: #4f4f4f;
+    color: whitesmoke;
     /* */
 }
 
