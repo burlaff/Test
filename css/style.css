@@ -25,61 +25,61 @@
 }
 
 #navBar {
-    background-color: #020306;
-    color: whitesmoke;
-    margin-bottom: 0px;
-    border-radius: 0px;
+    background-color: #020306 !important;
+    color: whitesmoke !important;
+    margin-bottom: 0px !important;
+    border-radius: 0px !important;
 }
 
 #jumboTron {
-    background-color: #090d19;
-    color: whitesmoke;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    background-color: #090d19 !important;
+    color: whitesmoke !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
 }
 
 #indexHeader {
-    padding-left: 20px;
+    padding-left: 20px !important;
 }
 
 
 th {
-    font-size: 30px;
-    text-align: center;
+    font-size: 30px !important;
+    text-align: center !important;
 }
 
 td {
-    font-size: 26px;
-    LINE-HEIGHT: 50px;
+    font-size: 26px !important;
+    LINE-HEIGHT: 50px !important;
 }
 
 tr:hover {
-    filter: brightness(60%);
+    filter: brightness(80%) !important;
 }
 
 
 #tableResponsive {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    border-radius: 20px;
-    margin-bottom: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
+    border-radius: 20px !important;
+    margin-bottom: 20px !important;
 }
 
 #paceTable {
-    text-align: center;
-    border-radius: 15px;
-    margin-bottom: 0px;
-    overflow: hidden; /* Hide scrollbars */
+    text-align: center !important;
+    border-radius: 15px !important;
+    margin-bottom: 0px !important;
+    overflow: hidden !important; /* Hide scrollbars */
 }
 
 #paceTable tr:nth-child(odd) {
-    background-color: #090d19;
-    color: whitesmoke;
+    background-color: #090d19 !important;
+    color: whitesmoke !important;
 }
 
 #paceTable tr:nth-child(even) {
-    background-color: #182243;
-    color: whitesmoke;
+    background-color: #182243 !important;
+    color: whitesmoke !important;
 }
 
 .tableRow {
-    padding: 20px;
+    padding: 20px !important;
 }
