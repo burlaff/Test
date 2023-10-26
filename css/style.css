@@ -1,4 +1,4 @@
-#indexBody {
+#indexBody{
     font-family: monospace;
 }
 
@@ -6,7 +6,7 @@
 
 }
 
-#bg-image {
+#bg-image{
     /* The image used */
     background-image: url("https://lh3.googleusercontent.com/u/0/drive-viewer/AK7aPaCR7ea6WxSC0Uuj3jmYoAE4qeFXXCVvRz7MHQzRiEXgk4siLcCHSLutGttCEAjEh9Wh7xIWRe3UDQFZgApN-wfzYgZr=w2480-h1688");
     position: fixed;
@@ -24,62 +24,63 @@
     filter: blur(5px);
 }
 
-#navBar {
-    background-color: #020306 !important;
-    color: whitesmoke !important;
-    margin-bottom: 0px !important;
-    border-radius: 0px !important;
+#navBar{
+    background-color: #020306;
+    color: whitesmoke;
+    margin-bottom: 0px;
+    border-radius: 0px;
 }
 
-#jumboTron {
-    background-color: #090d19 !important;
-    color: whitesmoke !important;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
+#jumboTron{
+    background-color: #090d19;
+    color: whitesmoke;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 #indexHeader {
-    padding-left: 20px !important;
+    padding-left: 20px;
 }
 
 
 th {
-    font-size: 30px !important;
-    text-align: center !important;
+    font-size: 30px;
+    text-align: center;
 }
 
 td {
-    font-size: 26px !important;
-    LINE-HEIGHT: 50px !important;
+    font-size: 26px;
+    LINE-HEIGHT:50px;
 }
 
 tr:hover {
-    filter: brightness(80%) !important;
+    filter: brightness(80%);
 }
 
 
-#tableResponsive {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px !important;
-    border-radius: 20px !important;
-    margin-bottom: 20px !important;
+#tableResponsive{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 20px;
+    margin-bottom: 20px;
 }
 
-#paceTable {
-    text-align: center !important;
-    border-radius: 15px !important;
-    margin-bottom: 0px !important;
-    overflow: hidden !important; /* Hide scrollbars */
+#paceTable{
+    text-align: center;
+    border-radius: 15px;
+    margin-bottom: 0px;
+    overflow: hidden; /* Hide scrollbars */
 }
 
-tr:nth-child(odd) .tableRows {
-    background-color: #090d19 !important;
-    color: whitesmoke !important;
+#paceTable tr:nth-child(odd){
+    background-color: #182243;
+    color: whitesmoke;
 }
 
-tr:nth-child(even) .tableRows {
-    background-color: #182243 !important;
-    color: whitesmoke !important;
+#paceTable tr:nth-child(even){
+    background-color: #090d19;
+    color: whitesmoke;
+    /* */
 }
 
-.tableRow {
-    padding: 20px !important;
+.tableRow{
+    padding: 20px;
 }
