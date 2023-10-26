@@ -12,24 +12,42 @@
 </head>
 <body id="indexBody">
 
+<!-------- Nav bar -------->
 <nav class="navbar primaryColour" id="navBar">
     <div class="container-fluid">
+
         <div class="navbar-header">
             <a class="navbar-brand" href="https://github.com/burlaff">Burlaff's Github</a>
         </div>
+
+
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Pace Converter</a></li>
+            <li class="nav-link"><a href="https://github.com/burlaff">Burlaff's Github</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    Running
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Pace Converter</a>
+                    <a class="dropdown-item" href="#">Strava</a>
+                </div>
+            </li>
         </ul>
     </div>
 </nav>
-<!-- -->
+<!-------- !Nav bar -------->
+
+<!-- BG image -->
 <div id="bg-image"></div>
 
+
+<!-- Jumbotron -->
 <div class="jumbotron jumbotron-fluid primaryColour" id="jumboTron">
     <h1 id="indexHeader">Test Page</h1>
 </div>
 
-
+<!-------- Main page content -------->
 <div class="container" id="indexContainer">
     <div class="row">
         <div class="col-sm-12" id="mainColumn">
