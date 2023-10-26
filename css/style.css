@@ -70,12 +70,12 @@ tr:hover {
     overflow: hidden !important; /* Hide scrollbars */
 }
 
-#paceTable tr:nth-child(odd) {
+tr:nth-child(odd) .tableRows {
     background-color: #090d19 !important;
     color: whitesmoke !important;
 }
 
-#paceTable tr:nth-child(even) {
+tr:nth-child(even) .tableRows {
     background-color: #182243 !important;
     color: whitesmoke !important;
 }
