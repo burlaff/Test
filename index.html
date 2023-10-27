@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Test Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="js/functions.js"></script>
+</head>
+<body id="indexBody">
+
+<nav class="navbar primaryColour" id="navBar">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="https://github.com/burlaff">Burlaff's Github</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Pace Converter</a></li>
+        </ul>
+    </div>
+</nav>
+<!-- -->
+<div id="bg-image"></div>
+
+<div class="jumbotron jumbotron-fluid primaryColour" id="jumboTron">
+    <h1 id="indexHeader">Test Page</h1>
+</div>
+
+
+<div class="container" id="indexContainer">
+    <div class="row">
+        <div class="col-sm-12" id="mainColumn">
+            <div class="table-responsive" id="tableResponsive">
+                <table class="table table-hover" id="paceTable">
+                    <tr>
+                        <th class="primaryColour">MPH</th>
+                        <th class="primaryColour">Mins per mile</th>
+                        <th class="primaryColour">5K</th>
+                        <th class="primaryColour">10K</th>
+                        <th class="primaryColour">Half Marathon</th>
+                        <th class="primaryColour">Marathon</th>
+                    </tr>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    generateTable();
+</script>
+
+</body>
+</html>
